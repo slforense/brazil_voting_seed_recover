@@ -10,11 +10,13 @@ DataBase
 ========
 Por se tratar de um banco de dados orientado a arquivos (JSON) a estrutura do banco de dados foi criada da seguinte forma:
 
+~~~ sh
 {
   name: nome_do_candidato, (String)
   party: partido_do_candidato (int)
   number: numero_do_candidato (int)
 }
+~~~
 
 Foi escolido este banco de dados para facilitar a serialização e envio das informações pelo web-service.
 

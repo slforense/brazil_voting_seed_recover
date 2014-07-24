@@ -6,23 +6,23 @@ Este repositório é parte do projeto de pós-graduação do estudante Bruno de 
 Seu uso é destinado unicamente à pesquisa e baseia-se no capítulo "Software vulnerabilities in the Brazilian voting machine" escritos por Diego F. Aranha, Marcelo Monte Karam, André de Miranda e Felipe Scarel do livro "Design, Development, and Use of Secure Electronic Voting Systems".
 
 
-O Projeto
-========================
-O projeto é divido em 5 partes:
+DataBase
+========
+Por se tratar de um banco de dados orientado a arquivos (JSON) a estrutura do banco de dados foi criada da seguinte forma:
 
-* O Banco de Dados (Armazena os candidatos)
-  * Mongodb - http://www.mongodb.org/
-  
-* O Web-Service (Ponto de recuperação dos candidatos)
-  * NodeJS - http://nodejs.org/
-  * Hapi - http://hapijs.com/
-  * Mongoose - http://mongoosejs.com/
-  
-* A simulação da Urna
-  * Qt / C++ - qt-project.org
-  
-* A ferramenta de recuperação de votos
-  * Qt / C++ - qt-project.org
-  
-* Uma rotina de população automática (dados aleatórios) do banco de dados
-  * Java - java.com
+{
+  name: nome_do_candidato, (String)
+  party: partido_do_candidato (int)
+  number: numero_do_candidato (int)
+}
+
+Foi escolido este banco de dados para facilitar a serialização e envio das informações pelo web-service.
+
+Instalação
+----------
+
+Para recuperar este backup basta executar o seguinte comando, com o mongodb não iniciado:
+
+~~~ sh
+$mongorestore --dbpath "path" path_to/database/mongo-backup
+~~~

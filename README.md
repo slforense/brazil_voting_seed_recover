@@ -8,7 +8,7 @@ Seu uso é destinado unicamente à pesquisa e baseia-se no capítulo "Software v
 
 O Projeto
 ========================
-O projeto é divido em 5 partes:
+O projeto é divido em 4 partes:
 
 * O Banco de Dados (Armazena os candidatos)
   * Mongodb - http://www.mongodb.org/
@@ -23,6 +23,3 @@ O projeto é divido em 5 partes:
   
 * A ferramenta de recuperação de votos
   * Qt / C++ - qt-project.org
-  
-* Uma rotina de população automática (dados aleatórios) do banco de dados
-  * Java - java.com

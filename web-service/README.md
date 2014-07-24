@@ -10,5 +10,5 @@ Web-Service
 ------------
 
 * Pré-requisitos
-  *NodeJS
-  *NPM
+  * NodeJS
+  * NPM
